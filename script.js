@@ -1,6 +1,3 @@
-var api1 = "https://api.tomtom.com/map/1/tile/basic/main/0/"
-var api2 = ".png?view=Unified&key=8pAuMy4aZyNVkb4F56z84G98veS2KIXG"
-
 var platform = new H.service.Platform({
     'app_id': 'Jt5CZlZD8mAR7NZ8ESmu',
     'app_code': 'vKJ85BIt8ni-L4zrxMOsWA'
@@ -10,7 +7,6 @@ fetch("https://ipinfo.io/json?token=1d48b5d9306d6d")
     .then(function(response) {
         return response.json()
     }).then(function(json) {
-        console.log((json));
         latlong = json.loc.split(",");
         var defaultLayers = platform.createDefaultLayers();
 
