@@ -1,0 +1,22 @@
+#weatherResults {
+    background-color: #F0F0F0;
+    border: 5px solid #C0C0C0;
+    padding: 25px;
+    margin: 25px;
+}
+
+#forecastResults {
+    background-color: #F0F0F0;
+    border: 5px solid #C0C0C0;
+    padding: 25px;
+    margin: 25px;
+}
+
+footer {
+    padding: 20px;
+}
+
+#map {
+    width: 60%;
+    height: 600px;
+}
