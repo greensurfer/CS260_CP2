@@ -44,7 +44,12 @@ fetch("https://ipinfo.io/json?token=1d48b5d9306d6d")
 
         var data = "<h2>Geo data based on your IP address</h2>";
         data += "<p>IP Address: " + json.ip + "<\p>";
-        data += "<p>Hostname: " + json.hostname + "<\p>";
+
+        console.log(json.hostname);
+        if (json.hostname != undefined) {
+            data += "<p>Hostname: " + json.hostname + "<\p>";
+        }
+
         data += "<p>Organization: " + json.org + "<\p>";
         data += "<p>City: " + json.city + "<\p>";
         data += "<p>Region: " + json.region + "<\p>";
