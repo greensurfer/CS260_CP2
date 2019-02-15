@@ -21,6 +21,22 @@ footer {
   padding: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  .right {
+    width: 100% !important;
+  }
+
+  .left {
+    width: 100% !important;
+    text-align: center !important;
+    height: 900px !important;
+  }
+}
+
 .column {
   float: left;
 }
