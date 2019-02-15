@@ -2,25 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Where am I?</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+  <meta charset="utf-8" name="viewport" content="initial-scale=1.0, width=device-width" />
+  <title>Where am I?</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
 
 <body>
-    <center>
-        <h1>Where am I?</h1>
-        <div id="map"></div>
-        <div id="ip_data"></div>
-    </center>
-    </script>
-    <script text="type/javascript" src="/script.js"></script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Where Am I</a>
+  </nav>
+
+  <div class="row">
+
+
+    <div class="left">
+      <div id="map">
+        <h5>Introduction</h5>
+        <p>This api allows us to get the location you are at based off of the IP address associated with your connection. Please click the following button to see where your IP places you. Above all else have fun! P.S. There is no secret Cow Level.</p>
+        <center>
+          <button id="locationGo" class="button">GO!</button>
+        </center>
+      </div>
+    </div>
+    <div class="right">
+      <div id="ip_data"></div>
+    </div>
+
+
+
+  </div>
+
+  </script>
+  <script text="type/javascript" src="/script.js"></script>
 </body>
 <footer>
-    <center><a href="https://github.com/greensurfer/CS260_CP2">Source code</a></center>
+  <center><a href="https://github.com/greensurfer/CS260_CP2">Source code</a></center>
 </footer>
 
 </html>
